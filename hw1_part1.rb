@@ -14,9 +14,9 @@ basic_salary = 0
 bonus =0
 
 loop do
+    print "Please , enter positive basic salary ( greater than 0 ) : "
        basic_salary = gets.to_i
-    if basic_salary.abs >=0 
-        basic_salary = basic_salary.abs
+    if basic_salary > 0
         case
         when (0..10000).include?(basic_salary)
             bonus = basic_salary * 0.25
@@ -28,8 +28,6 @@ loop do
         break
     end
 end
-
-
 
 net_salary = basic_salary + bonus
 
