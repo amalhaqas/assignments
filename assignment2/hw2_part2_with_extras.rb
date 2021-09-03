@@ -1,5 +1,5 @@
 # ###################################################################################################################
-# -------------------------------------- START OF QUESTION 2 WITHOUT EXTRAS  ----------------------------------------
+# ---------------------------------------- START OF QUESTION 2 WIT EXTRAS  ------------------------------------------
 # ###################################################################################################################
 
 # Guessing Game:
@@ -42,7 +42,7 @@ while play_again.chomp.casecmp?("Y")
     # start of program 
     puts "########################################################################"
     puts ":: GUSSING GAME ::"
-    puts "   # Determine the difficulty level  of the game"
+    puts "   # Determine the difficulty level of the game"
     puts "   # The entered number must be is this range 1 - 100 (inclusive)"
     puts "########################################################################"
     while true
@@ -58,10 +58,13 @@ while play_again.chomp.casecmp?("Y")
         when 1..3
             # determines the number of tries
             if difficulty_level==1
+                puts "You have (3) tries"
                 tries_number = 3
             elsif difficulty_level==2
+                puts "You have (6) tries"
                 tries_number = 6
             else
+                puts "You have (10) tries"
                 tries_number = 10
             end
 
@@ -113,6 +116,6 @@ while play_again.chomp.casecmp?("Y")
 end
 
 # ###################################################################################################################
-# --------------------------------------- END OF QUESTION 2 WITHOUT EXTRAS  -----------------------------------------
+# ----------------------------------------- END OF QUESTION 2 WIT EXTRAS  -------------------------------------------
 # ###################################################################################################################
 
